@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator advanced project | javascript condition</title>
+    <link rel="stylesheet" href="/Password-generator/docs/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="container">
+        <section class="heading">
+            <h1><b>Random Password Generator</b></h1>
+        </section>
+
+        <section class="password">
+            <input type="text" class="passBox" id="passBox" placeholder="Password">
+            <span class="material-symbols-outlined" id="copy">content_copy</span>
+            <p id="strength"></p>
+        </section>
+
+        <section class="input">
+            <span>
+                <input type="range" class="slider" min="1" max="27" value="8"  id="rangeSlider">
+                <p>Choose password length</p>
+            </span>
+            <span id="rangeValue"> </span>
+        </section>
+
+        <section class="choice upperChar">
+            <p><b>Include Uppercase letters (A-Z)</b></p>
+            <input type="checkbox" id="upperCase"checked>
+        </section>
+        <section class="choice lowerChar">
+            <p><b>Include Lowercase letters (a-z)</b></p>
+            <input type="checkbox" id="lowerCase"checked>
+        </section>
+        <section class="choice number">
+            <p><b>Include Numbers (0-9)</b></p>
+            <input type="checkbox" id="number"checked>
+        </section>
+        <section class="choice symbol">
+            <p><b>Include Symbols (like @,$)</b></p>
+            <input type="checkbox" id="symbol"checked>
+        </section>
+
+        <button class="btn" id="btn"><b>Generate Password</b></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
